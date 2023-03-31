@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+   
+    background-size: cover;
+    align-items: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+
+.conteiner{
+    border-radius: 20% 0px;
+    width: 260px;    
+    background-color: rgba(17, 5, 182, 0.562) ;
+    box-shadow:1px 10px 10px rgba(12, 14, 85, 0.527),2px 20px 30px rgba(12, 11, 11, 0.918) ;
+    padding: 50px 10px
+    
+}
+.input-field{
+    width: 100%;
+    height: 46px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.input-field{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+label{
+    position: absolute;
+    top:0;
+    left: 0;
+    color: white;
+    transform: translateY(18px);
+    transition: .25s ease-in-out;
+}
+
+input:focus + label{
+    transform: translateY(-14px) scale(.8);
+    color:#a92658cb
+}
+
+input:focus{
+    box-shadow: 0 1px 0 0 #dd2828;
+    border-bottom: #a92626 1px solid;
+}
+
+.center{
+    text-align: center;
+}
+input:not(:placeholder-shown) + label{
+    transform:  translateY(-14px) scale(.8);
+    color: #a92626;
+    font-weight: bold;
+}
+input:not(:placeholder-shown){
+    border-bottom:2px solid #a92626 ;
+    box-shadow: 1px 0 0 #a92626;
+}
+input::placeholder{
+    color: transparent;
+}
+button{
+    background: transparent;
+    padding: 15px 50px;
+    border-radius: 20px;
+    color: white;
+    text-transform: uppercase;
+    border:2px solid white;
+    margin: 20px;
+    cursor: pointer;
+    transition: ease-in-out .25s;
+}
+
+button:hover{
+    background: rgba(255, 0, 0, 0.459);
+}
+#icon{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    background:url('eye\ \(1\).png') ; 
+    background-size: cover;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    
+}
